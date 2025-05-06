@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="stylessaziz.css" />
+  <title>AzizBrand</title>
+</head>
+
+<body>
+  <header class="header">
+    <canvas id="particles"></canvas>
+    <nav>
+      <div class="nav__logo"><a href="#">AzizBrand</a></div>
+      <ul class="nav__links" id="nav-links">
+        <li class="link"><a href="#home">Accueil</a></li>
+        <li class="link"><a href="#choose">À propos</a></li>
+        <li class="link"><a href="#craft">Artisanat</a></li>
+        <li class="link"><a href="#testimonial">Témoignages</a></li>
+        <li class="link"><a href="#blog">Blog</a></li>
+      </ul>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-line"></i></span>
+      </div>
+      <div class="nav__actions">
+        <span><i class="ri-search-fill"></i></span>
+        <span><i class="ri-user-fill"></i></span>
+      </div>
+    </nav>
+    <div class="section__container header__container" id="home">
+      <h1>Rendez votre intérieur plus minimaliste et moderne</h1>
+      <p>
+        Transformez votre pièce avec Panto pour un style plus minimaliste et moderne,
+        facilement et rapidement.
+      </p>
+      <form action="/">
+        <input type="text" placeholder="Rechercher un meuble" />
+        <button><i class="ri-search-line"></i></button>
+      </form>
+      <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+    </div>
+  </header>
+  
+
+  <section class="section__container choose__container" id="choose">
+    <img class="choose__bg" src="assets/dot-bg.png" alt="fond" />
+    <div class="choose__content">
+      <h2 class="section__header">Pourquoi nous choisir</h2>
+      <p class="section__subheader">
+        Découvrez une créativité et une expertise inégalées en design d'intérieur.
+        Découvrez pourquoi nous sommes le bon choix pour créer l’espace de vos rêves.
+      </p>
+      <div class="choose__grid">
+        <div class="choose__card">
+          <span><i class="ri-truck-line"></i></span>
+          <h4>Livraison rapide et gratuite</h4>
+          <p>
+            Sublimez votre intérieur grâce à notre service de livraison rapide et gratuite, sans attendre.
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-shopping-bag-3-line"></i></span>
+          <h4>Achat facile</h4>
+          <p>
+            Découvrez l'élégance en toute simplicité : explorez nos solutions de design d’intérieur faciles à acheter.
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-customer-service-2-line"></i></span>
+          <h4>Assistance 24h/24 et 7j/7</h4>
+          <p>
+            Ayez l'esprit tranquille : notre équipe dédiée est disponible à tout moment.
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-loop-right-line"></i></span>
+          <h4>Retours sans tracas</h4>
+          <p>
+            Nous croyons au choix parfait, et si cela ne convient pas tout à fait, nous facilitons le retour des articles.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="choose__image">
+      <img src="assets/choose.jpg" alt="choisir" />
+    </div>
+  </section>
+  
+
+  <section class="offer__container" id="offer">
+    <div class="offer__grid__top">
+      <img src="assets/offer-1.jpg" alt="offre" />
+      <img src="assets/offer-2.jpg" alt="offre" />
+      <img src="assets/offer-3.jpg" alt="offre" />
+      <div class="offer__content">
+        <h2 class="section__header">Offres intelligentes</h2>
+        <p class="section__subheader">
+          Découvrez des offres exclusives pour transformer votre intérieur avec style
+        </p>
+        <button class="btn">Explorer maintenant</button>
+      </div>
+    </div>
+    <div class="offer__grid__bottom">
+      <img src="assets/offer-4.jpg" alt="offre" />
+      <img src="assets/offer-5.jpg" alt="offre" />
+      <img src="assets/offer-6.jpg" alt="offre" />
+      <img src="assets/offer-7.jpg" alt="offre" />
+    </div>
+  </section>
+  
+
+  <section class="section__container craft__container" id="craft">
+    <div class="craft__content">
+      <h2 class="section__header">Conçu avec des matériaux d'excellence</h2>
+      <p class="section__subheader">
+        Sublimez votre espace avec qualité et style
+      </p>
+      <button class="btn">Explorer</button>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-1.png" alt="artisanat" />
+        <p>Chaise nordique</p>
+        <h4>1700,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-2.png" alt="artisanat" />
+        <p>Fauteuil à dossier ailé</p>
+        <h4>3000,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-3.png" alt="artisanat" />
+        <p>Chaise d'accent</p>
+        <h4>900,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-1.png" alt="artisanat" />
+        <p>Chaise nordique</p>
+        <h4>1700,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-2.png" alt="artisanat" />
+        <p>Fauteuil à dossier ailé</p>
+        <h4>3000,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-3.png" alt="artisanat" />
+        <p>Chaise d'accent</p>
+        <h4>900,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-1.png" alt="artisanat" />
+        <p>Chaise nordique</p>
+        <h4>1700,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-2.png" alt="artisanat" />
+        <p>Fauteuil à dossier ailé</p>
+        <h4>3000,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-3.png" alt="artisanat" />
+        <p>Chaise d'accent</p>
+        <h4>900,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-1.png" alt="artisanat" />
+        <p>Chaise nordique</p>
+        <h4>1700,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-2.png" alt="artisanat" />
+        <p>Fauteuil à dossier ailé</p>
+        <h4>3000,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="assets/craft-3.png" alt="artisanat" />
+        <p>Chaise d'accent</p>
+        <h4>900,00 dh</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    
+  </section>
+  
+
+  <section class="section__container modern__container" id="modern">
+    <div class="modern__image">
+      <img src="assets/dot-bg.png" alt="bg" class="modern__bg" />
+      <img src="assets/modern-1.jpg" alt="moderne" class="modern__img-1" />
+      <img src="assets/modern-2.jpg" alt="moderne" class="modern__img-2" />
+      <img src="assets/modern-3.jpg" alt="moderne" class="modern__img-3" />
+    </div>
+    <div class="modern__content">
+      <h2 class="section__header">
+        Nous vous aidons à concevoir un design d'intérieur moderne
+      </h2>
+      <p class="section__subheader">
+        Transformez votre espace grâce à notre expertise en design d'intérieur contemporain :
+        laissez-nous vous guider pour créer des intérieurs élégants et stylés qui reflètent
+        votre goût unique et votre mode de vie.
+      </p>
+      <div class="modern__grid">
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Notre équipe est spécialisée dans la création de designs d'intérieur personnalisés
+            qui adoptent une esthétique moderne.
+          </p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Nous restons à la pointe des tendances du design, garantissant que votre espace
+            soit stylé et innovant.
+          </p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Le design d'intérieur moderne ne concerne pas seulement l'esthétique ; il s'agit
+            aussi de fonctionnalité et de confort.
+          </p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Nous prenons en charge tous les aspects du processus de conception, du concept
+            à l'approvisionnement et à l'installation.
+          </p>
+        </div>
+      </div>
+      <button class="btn">Explorer</button>
+    </div>
+  </section>
+
+
+  <section class="section__container testimonial__container" id="testimonial">
+    <h2 class="section__header">Témoignages</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="testimonial__card">
+            <p>
+              Travailler avec eux était un plaisir absolu! Leur design moderne
+              L'expertise a complètement transformé ma maison en un contemporain
+              havre. J'ai maintenant un espace qui a non seulement l'air magnifique mais aussi
+              se sent incroyablement confortable. Je ne pourrais pas être plus heureux avec le
+              résultats
+            </p>
+            <img src="assets/profile-pic-1.jpg" alt="testimonial" />
+            <h4>Mohammed Ben jeloune</h4>
+            <h5>PDG, co-fondateur</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial__card">
+            <p>
+              Je les ai embauchés pour réorganiser notre espace de bureau, et les résultats
+              a dépassé mes attentes. Leurs concepts de conception innovants
+              inspiré une nouvelle vie dans notre lieu de travail, ce qui le rend à la fois fonctionnel
+              et élégant. L'attention de l'équipe aux détails et à l'engagement envers
+              La qualité est vraiment louable.
+            </p>
+            <img src="assets/profile-pic-2.jpg" alt="testimonial" />
+            <h4>Mohammed Ben jeloune</h4>
+            <h5>Rénovateur de bureau</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial__card">
+            <p>
+              J'avais une vision d'une maison d'inspiration minimaliste, et ils ont apporté
+              C'est la vie parfaitement. Leurs concepteurs ont compris mon esthétique
+              et incorporé des lignes élégantes et propres et une palette de couleurs neutres
+              pour créer une oasis sereine. Je suis amoureux de mon moderne,
+              Espace sans encombrement!
+            </p>
+            <img src="assets/profile-pic-3.jpg" alt="testimonial" />
+            <h4>Mohammed Ben jeloune</h4>
+            <h5>Banquière</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial__card">
+            <p>
+              Ce qui les distingue, c'est leur professionnalisme et leur efficacité.
+              Ils ont rendu l'ensemble du processus de conception sans tracas, à partir du
+              Consultation initiale à l'installation finale. Leur équipe
+              tout géré, me laissant avec un magnifiquement conçu
+              intérieur moderne
+            </p>
+            <img src="assets/profile-pic-4.jpg" alt="testimonial" />
+            <h4>Mohammed Ben jeloune</h4>
+            <h5>Homme d'affaires</h5>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section__container blog_container" id="blog">
+    <h2 class="section__header">Blog récent</h2>
+    <div class="blog__grid">
+      <div class="blog__card">
+        <img src="assets/blog-1.jpg" alt="blog" />
+        <h4>Maîtriser le minimalisme moderne</h4>
+        <p><span>par</span> Nadia El Hanouni <span>sur</span> 18 avril 2022</p>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog-2.jpg" alt="blog" />
+        <h4>La fusion de la technologie et du design</h4>
+        <p>
+          <span>par</span> Abdelaziz Aabbour<span>sur</span> 10 novembre 2022
+        </p>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog-3.jpg" alt="blog" />
+        <h4>Intérieurs modernes respectueux de l'environnement</h4>
+        <p><span>par</span> Rihave Sarhi <span>sur</span> 25 février 2023</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__content">
+        <h4>Abonnez-vous pour obtenir les dernières nouvelles sur nous</h4>
+        <p>
+          Nous vous recommandons de vous abonner à notre journal. Entrez votre e-mail à
+          Obtenez nos mises à jour quotidiennes sur nous
+        </p>
+      </div>
+      <div class="footer__form">
+        <form action="/">
+          <input type="text" placeholder="Entrez votre e-mail" />
+          <button>S'abonner</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=100091736677761" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/aziz__abour?igsh=MXF4Mng1ZWRpbmFncw==" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://whatsapp.com/dl/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="section__container footer__bar">
+      <div class="footer__logo">
+        <h4><a href="#">AzizBrand</a></h4>
+        <p>&copy; 2025 Abdealziza Aabbour. Tous droits réservés.</p>
+      </div>
+      <ul class="footer__nav">
+        <li class="footer__link"><a href="#">About</a></li>
+        <li class="footer__link"><a href="#">Partnership</a></li>
+        <li class="footer__link"><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="scriptaziz.js"></script>
+</body>
+
+</html>
