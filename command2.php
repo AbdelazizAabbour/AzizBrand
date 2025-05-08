@@ -63,6 +63,6 @@
         </div>
     </div>
 
-    <script src="./command.js"></script>
+    <script src="./command2.js"></script>
 </body>
 </html>

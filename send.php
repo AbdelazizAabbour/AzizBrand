@@ -3,103 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulaire de Commande</title>
-    <style>
-          :root {
-            --primary-color: #2f2f2f;
-            --text-dark: #18181b;
-            --text-light: #71717a;
-            --white: #ffffff;
-            --max-width: 1200px;
-            --header-font: "Lora", serif;
-            --body-font: "Poppins", sans-serif;
-            --accent-color: #9f7e54;
-            --bg-light: #f8f8f8;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        body {
-            font-family: var(--body-font);
-            background-color: var(--bg-light);
-            padding: 2rem;
-            margin: 0;
-        }
-
-        form {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-family: var(--body-font);
-        }
-
-        button {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-        }
-
-        #confirmation-message {
-            text-align: center;
-            font-family: var(--body-font);
-            margin-bottom: 2rem;
-            transition: opacity 1s ease;
-        }
-
-        .success-box {
-            display: inline-block;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1.3rem;
-            background-color: #d1fae5;
-            color: #065f46;
-            border: 2px solid #10b981;
-            box-shadow: 0 0 20px #10b981;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .error-box {
-            display: inline-block;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1.3rem;
-            background-color: #fee2e2;
-            color: #991b1b;
-            border: 2px solid #dc2626;
-            box-shadow: 0 0 20px #dc2626;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
+    <link rel="stylesheet" href="./send.css">
 </head>
 <body>
-
+<header>
+        <div class="header-container">
+            <a href="./index.html" class="logo" >BadrBrand</a>
+        </div>
+    </header>
 <div id="confirmation-message">
     <?php
     use PHPMailer\PHPMailer\PHPMailer;
@@ -144,7 +55,7 @@
             $mail->addAddress('azizabour77@gmail.com');
 
             $mail->isHTML(true);
-            $mail->Subject = '📦 Nouvelle commande client';
+            $mail->Subject = 'Nouvelle commande client';
             $mail->Body = $body;
 
             $mail->send();
