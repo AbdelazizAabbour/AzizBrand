@@ -545,18 +545,6 @@ nav {
   z-index: 2;
 }
 
-.offer__grid__top img,
-.offer__grid__bottom img {
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-25px); }
-  100% { transform: translateY(0px); }
-}
-
-
 .blog__grid {
   margin-top: 4rem;
   display: grid;
